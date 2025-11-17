@@ -15,6 +15,7 @@ def aes_encrypt_decrypt(message):
     return key.hex(), ciphertext.hex(), decrypted_message
 
 # Asymmetric Encryption
+# Example usage of RSA for encryption and decryption
 def rsa_encrypt_decrypt(message):
     private_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
     public_key = private_key.public_key()
